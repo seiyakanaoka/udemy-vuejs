@@ -14,9 +14,21 @@
         class="link"
         exact
       >Users</router-link>
+      <button @click="increment(2)">+1</button>
+      <button @click="decrement(2)">-1</button>
     </nav>
   </div>
 </template>
+
+<script>
+import { mapActions } from "vuex";
+
+export default {
+  methods: {
+    ...mapActions("count", ["increment", "decrement"])
+  }
+}
+</script>
 
 <style scoped>
 .link {

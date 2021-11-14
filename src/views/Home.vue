@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h2>Home</h2>
+    <h3>Home</h3>
+    <h3>Hello</h3>
     <button @click="toUsers">Usersのページにいく</button>
   </div>
 </template>
